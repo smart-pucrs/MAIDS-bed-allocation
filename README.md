@@ -1,4 +1,4 @@
-# Explainable Agents
+# MAIDS - Multi-Agent Intentional Dialogue System
 
 Developed during the PhD course of Computer Science
 By [Débora C. Engelmann](https://github.com/DeboraEngelmann), 
