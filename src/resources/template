@@ -1,0 +1,86 @@
+%% Modified Full length research paper template
+%% Original created by Simon Hengchen and Nilo Pedrazzini for the Journal of Open Humanities Data (https://openhumanitiesdata.metajnl.com)
+%% https://creativecommons.org/licenses/by/4.0/legalcode
+
+
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\setlength{\paperwidth}{21cm}   % A4
+\setlength{\paperheight}{29.7cm}% A4
+\setlength\topmargin{-0.5cm}    
+\setlength\oddsidemargin{0cm}   
+\setlength\textheight{24.7cm} 
+\setlength\textwidth{16.0cm}
+\setlength\columnsep{0.6cm}  
+\newlength\titlebox 
+\setlength\titlebox{5cm}
+\setlength\headheight{5pt}   
+\setlength\headsep{0pt}
+\pagestyle{plain}
+\usepackage{color}
+\usepackage[natbibapa]{apacite}
+\usepackage{xurl}
+\usepackage[colorlinks,citecolor=blue,urlcolor=blue, linkcolor=blue, bookmarks=false,hypertexnames=true]{hyperref}
+\usepackage{url}
+\usepackage{float}
+\usepackage{graphicx}
+%\usepackage{libertine}
+\usepackage{endnotes}
+\let\footnote=\endnote
+\usepackage{doi} % hyperlink URLs
+\renewcommand{\doi}{DOI:~}
+
+\newcommand\outauthor{
+	\begin{tabular}[t]{c}
+		\bf\@author
+	\end{tabular}}
+	
+%Add keyword command
+\providecommand{\keywords}[1]
+{\small\textbf{Keywords:} #1
+}
+
+\providecommand{\authorroles}[1]
+{\small\textbf{Author roles:} #1
+}
+
+\title{\textbf{%!name!%}\\Validation Report}
+
+\date{} %leave blank
+
+\begin{document}
+
+\maketitle
+
+\section{Domain}
+\textbf{Domain:}  %!domain!%\\
+\textbf{Problem:} %!problem!%
+
+\subsection{Files}
+\textbf{Domain file:}  %!domainFile!% \\
+\textbf{Problem file:} %!problemFile!%\\
+\textbf{Plan file:}    %!planFile!%
+
+\section{Plan}
+
+\begin{itemize}
+    \item[%!planNum!%.] %!plan!%
+\end{itemize}
+
+\section{Validation}
+
+\begin{itemize}
+\item[%!valNum!%.] %!val!%
+\begin{itemize}
+	\item[\textbullet] %!valP!%
+\end{itemize}
+%!endVal!%
+\end{itemize}
+
+\hline
+\vspace{10pt}
+\large \textbf{%!goalAchieved!%}
+
+\end{document}

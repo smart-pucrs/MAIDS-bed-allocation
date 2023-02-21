@@ -1,0 +1,7 @@
+{"msgId":"mid1","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":{"name":"cancelAllocByOptimization","isNegated":false}}
+{"msgId":"mid3","isReply":"nirt","performative":"question","sender":"optimiser","receiver":"database","content":{"name":"cancelOpAlloc","isNegated":false}}
+{"msgId":"mid4","isReply":"nirt","performative":"assert","sender":"database","receiver":"optimiser","content":{"name":"cancelOpAllocation","prop1":"\"Success\"","isNegated":false}}
+{"msgId":"mid5","isReply":"nirt","performative":"assert","sender":"optimiser","receiver":"assistant","content":{"name":"cancelOpAllocation","prop1":"\"Success\"","isNegated":false}}
+{"msgId":"mid6","isReply":"nirt","performative":"assert","sender":"assistant","receiver":"operator","content":{"prop2":"\"Ok, solicitação concluida sem alocar nenhum paciente.\"","name":"answer","prop1":{"prop1":"\"Success\"","name":"cancelOpAllocation","isNegated":false},"isNegated":false}}
+{"msgId":"mid7","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":{"name":"getValidationResult","isNegated":false}}
+{"msgId":"mid8","isReply":"nirt","performative":"question","sender":"assistant","receiver":"validator","content":{"name":"getValidationResult","isNegated":false}}

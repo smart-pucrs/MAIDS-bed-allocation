@@ -1,0 +1,86 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+
+    maven { url "http://jacamo.sourceforge.net/maven2" }
+    maven { url "https://repo.gradle.org/gradle/libs-releases-local" }
+    maven { url "https://jitpack.io" }
+    maven { url "https://jade.tilab.com/maven/"}
+}
+
+dependencies {
+	compile group: 'org.jacamo' , name: 'jacamo'   , version: '0.9-SNAPSHOT'  , changing: true , transitive: true
+
+	compile 'org.jason-lang:jason:2.5-SNAPSHOT'
+	compile 'javax.xml.bind:jaxb-api:+'
+	
+	
+	compile files('libs/hsqldb.jar')
+		
+	compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.29.1'
+	compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.29.1'
+	compile 'org.glassfish.jersey.inject:jersey-hk2:2.29.1'
+	compile group: 'org.glassfish.jersey', name: 'jersey-bom', version: '2.29.1', ext: 'pom'
+
+	compile 'org.glassfish.jersey.core:jersey-server:2.29.1'
+	compile 'org.glassfish.jersey.core:jersey-client:2.29.1'
+	compile 'org.glassfish.jersey.media:jersey-media-multipart:2.29.1'
+
+	compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.29.1'
+
+	// containers:
+	compile 'org.glassfish.jersey.containers:jersey-container-grizzly2-http:2.29.1'
+	compile 'org.glassfish.grizzly:grizzly-http-server:2.4.4'
+	
+	compile 'org.apache.zookeeper:zookeeper:3.5.4-beta'
+	compile 'org.apache.curator:curator-framework:4.0.1'
+	compile 'org.apache.curator:curator-x-async:4.0.1'
+	
+
+	compile 'com.google.code.gson:gson:2.8.5'
+    
+    //database
+    compile 'com.google.firebase:firebase-admin:6.11.0'
+    // https://mvnrepository.com/artifact/org.postgresql/postgresql
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.3'
+    
+    
+    compile group: 'com.github.galigator.openllet', name: 'openllet-distribution', version: '2.6.5'
+	
+	//to use the websocket
+	implementation 'org.java-websocket:Java-WebSocket:1.5.3'
+	
+	implementation 'com.github.eishub:eis:v0.6.2'
+	// to use Ontologies
+	
+  	implementation group: 'net.sourceforge.owlapi', name: 'owlapi-distribution', version: '5.1.16'
+		
+}
+
+
+task run (type: JavaExec, dependsOn: 'classes') {
+    description 'runs the application'
+    group ' JaCaMo'
+    main = 'jacamo.infra.JaCaMoLauncher'
+    args 'explainable_agents.jcm'
+    classpath sourceSets.main.runtimeClasspath
+}
+
+sourceSets {
+    main {
+        java { 
+            srcDir 'src/env'
+            srcDir 'src/agt'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+}

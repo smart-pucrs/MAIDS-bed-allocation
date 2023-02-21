@@ -1,0 +1,1 @@
+{"msgId":"mid2","isReply":"nirt","performative":"question","sender":"assistant","receiver":"validator","content":{"name":"getValidationResult","isNegated":false}}

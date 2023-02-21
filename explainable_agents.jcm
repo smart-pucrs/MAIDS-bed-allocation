@@ -1,0 +1,56 @@
+/*
+    Created by: Débora Engelmann
+	August 13, 2020
+*/
+
+mas explainable_agents {
+
+	agent assistant:assistant.asl{
+		beliefs: url("https://explainable-agent.web.app/page/optimised")
+    }    
+	agent optimiser:optimiser.asl{
+    	// focus: optimiser
+    }  
+    
+	agent validator:validator.asl{
+    	focus: pddl
+    }
+
+	agent operator:communication_specialist.asl{
+    	focus: dial4jaca
+//    	beliefs: request("operator", "ushdiushd", "Get Suggestion", [param("patient",["9879877"])], [])
+    }
+	
+	agent nurse:communication_specialist_nurse.asl{
+    	focus: dial4jaca
+	}
+
+	agent database:database_specialist.asl{
+    	focus: postgres//, optimiser
+    }
+
+	agent ontology_specialist:ontology_specialist.asl{
+   		focus: onto4jaca, postgres
+        ag-bb-class: jason.bb.JDBCPersistentBB("org.hsqldb.jdbcDriver","jdbc:hsqldb:file:ontology","sa","","[msgSent(7,log)]")
+
+   	}
+   	
+    agent monitor:monitor.asl {
+    	focus: rv4jaca
+        ag-arch: br.pucrs.smart.RV4JaCa.SnifferCentralised    // driver for HSQLDB, // URL connection, // user, // password
+//           ag-bb-class: jason.bb.JDBCPersistentBB("org.hsqldb.jdbcDriver","jdbc:hsqldb:file:sniff","sa","","[msgSent(7,log)]")
+		
+	}
+	
+	workspace wp{
+//        artifact optimiser:br.pucrs.smart.optimiser.OptimiserArtifact
+		artifact dial4jaca:br.pucrs.smart.Dial4JaCa.Dial4JaCaArtifact
+		artifact postgres:br.pucrs.smart.postgresql.PostgresArtifact()
+		artifact pddl:br.pucrs.smart.validator.ValidatorArtifact()
+		artifact onto4jaca:br.pucrs.smart.Onto4JaCa.mas.Onto4JaCaArtifact("src/resources/hsl-ontology.owl")
+		artifact rv4jaca:br.pucrs.smart.RV4JaCa.RV4JaCaArtifact("ws://127.0.0.1:8088")
+	}
+	
+	platform: br.pucrs.smart.Dial4JaCa.RestArtifact("--main 2181 --restPort 8080")
+
+}

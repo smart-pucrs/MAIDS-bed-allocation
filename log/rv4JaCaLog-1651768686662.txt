@@ -1,0 +1,2 @@
+{"msgId":"mid2","isReply":"nirt","performative":"question","sender":"assistant","receiver":"optimiser","content":{"name":"getSuggestionByPatient","prop1":["\"Maria da Silva\""],"isNegated":false}}
+{"msgId":"mid1","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":{"name":"getSuggestionByPatient","prop1":["\"Maria da Silva\""],"isNegated":false}}

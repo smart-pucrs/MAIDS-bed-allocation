@@ -1,0 +1,2 @@
+{"time":"Jan 24, 2023, 10:44:57 AM","msgId":"mid1","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":{"name":"getSuggestionByPatient","prop1":{"arr":["\"2044429\""],"length":1},"isNegated":false}}
+{"time":"Jan 24, 2023, 10:44:57 AM","msgId":"mid2","isReply":"nirt","performative":"question","sender":"assistant","receiver":"optimiser","content":{"name":"getSuggestionByPatient","prop1":{"arr":["\"2044429\""],"length":1},"isNegated":false}}

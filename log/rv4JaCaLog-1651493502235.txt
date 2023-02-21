@@ -1,0 +1,27 @@
+{"msgId":"mid1","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":"getValidationResult"}
+{"msgId":"mid3","isReply":"nirt","performative":"assert","sender":"validator","receiver":"assistant","content":"result(\"6d4f55f9-1553-41d2-aa16-998dca3a78d2\",\"true\",[])"}
+{"msgId":"mid4","isReply":"nirt","performative":"assert","sender":"assistant","receiver":"operator","content":"\"O seu plano de alocação de leitos não possui nenhuma falha. Posso confirmar a alocação?\""}
+{"msgId":"mid5","isReply":"nirt","performative":"question","sender":"assistant","receiver":"validator","content":"updateValidation(\"6d4f55f9-1553-41d2-aa16-998dca3a78d2\",\"O seu plano de alocação de leitos não possui nenhuma falha. Posso confirmar a alocação?\")"}
+{"msgId":"mid6","isReply":"nirt","performative":"question","sender":"validator","receiver":"database","content":"updateValidation(\"6d4f55f9-1553-41d2-aa16-998dca3a78d2\",\"O seu plano de alocação de leitos não possui nenhuma falha. Posso confirmar a alocação?\")"}
+{"msgId":"mid7","isReply":"nirt","performative":"assert","sender":"database","receiver":"validator","content":"updatedValidation(\"Success\")"}
+{"msgId":"mid8","isReply":"nirt","performative":"assert","sender":"validator","receiver":"assistant","content":"updatedValidation(\"Success\")"}
+{"msgId":"mid9","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":"allocValPatients"}
+{"msgId":"mid10","isReply":"nirt","performative":"question","sender":"assistant","receiver":"validator","content":"allocByValidation"}
+{"msgId":"mid11","isReply":"nirt","performative":"question","sender":"validator","receiver":"database","content":"allocByValidation"}
+{"msgId":"mid12","isReply":"nirt","performative":"assert","sender":"database","receiver":"validator","content":"allocByValidation(\"Success\")"}
+{"msgId":"mid13","isReply":"nirt","performative":"assert","sender":"validator","receiver":"assistant","content":"allocByValidation(\"Success\")"}
+{"msgId":"mid14","isReply":"nirt","performative":"assert","sender":"assistant","receiver":"operator","content":"\"Ok, pacientes alocados conforme solicitado\""}
+{"msgId":"mid15","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":"getValidationResult"}
+{"msgId":"mid16","isReply":"nirt","performative":"question","sender":"assistant","receiver":"validator","content":"getValidationResult"}
+{"msgId":"mid17","isReply":"nirt","performative":"assert","sender":"validator","receiver":"assistant","content":"result(\"dae9e209-1884-4f71-bc19-87116c3ae406\",\"true\",[])"}
+{"msgId":"mid18","isReply":"nirt","performative":"assert","sender":"assistant","receiver":"operator","content":"\"O seu plano de alocação de leitos não possui nenhuma falha. Posso confirmar a alocação?\""}
+{"msgId":"mid19","isReply":"nirt","performative":"question","sender":"assistant","receiver":"validator","content":"updateValidation(\"dae9e209-1884-4f71-bc19-87116c3ae406\",\"O seu plano de alocação de leitos não possui nenhuma falha. Posso confirmar a alocação?\")"}
+{"msgId":"mid20","isReply":"nirt","performative":"question","sender":"validator","receiver":"database","content":"updateValidation(\"dae9e209-1884-4f71-bc19-87116c3ae406\",\"O seu plano de alocação de leitos não possui nenhuma falha. Posso confirmar a alocação?\")"}
+{"msgId":"mid21","isReply":"nirt","performative":"assert","sender":"database","receiver":"validator","content":"updatedValidation(\"Success\")"}
+{"msgId":"mid22","isReply":"nirt","performative":"assert","sender":"validator","receiver":"assistant","content":"updatedValidation(\"Success\")"}
+{"msgId":"mid23","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":"allocValPatients"}
+{"msgId":"mid24","isReply":"nirt","performative":"question","sender":"assistant","receiver":"validator","content":"allocByValidation"}
+{"msgId":"mid25","isReply":"nirt","performative":"question","sender":"validator","receiver":"database","content":"allocByValidation"}
+{"msgId":"mid26","isReply":"nirt","performative":"assert","sender":"database","receiver":"validator","content":"allocByValidation(\"Success\")"}
+{"msgId":"mid27","isReply":"nirt","performative":"assert","sender":"validator","receiver":"assistant","content":"allocByValidation(\"Success\")"}
+{"msgId":"mid28","isReply":"nirt","performative":"assert","sender":"assistant","receiver":"operator","content":"\"Ok, pacientes alocados conforme solicitado\""}

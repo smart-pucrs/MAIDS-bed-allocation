@@ -1,0 +1,3 @@
+{"msgId":"mid1","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":{}}
+{"msgId":"mid3","isReply":"nirt","performative":"assert","sender":"ontology_specialist","receiver":"assistant","content":{}}
+{"msgId":"mid4","isReply":"nirt","performative":"assert","sender":"assistant","receiver":"operator","content":{}}

@@ -1,0 +1,1 @@
+{"msgId":"mid1","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":{"prop2":"\"2044429\"","name":"alocar","prop1":"\"3132\"","isNegated":false}}

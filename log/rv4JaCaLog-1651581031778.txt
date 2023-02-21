@@ -1,0 +1,2 @@
+{"msgId":"mid2","isReply":"nirt","performative":"question","sender":"assistant","receiver":"ontology_specialist","content":{}}
+{"msgId":"mid4","isReply":"nirt","performative":"assert","sender":"assistant","receiver":"operator","content":{}}

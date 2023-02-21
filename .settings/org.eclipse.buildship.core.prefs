@@ -1,0 +1,13 @@
+arguments=--init-script /home/vivan/.config/Code/User/globalStorage/redhat.java/1.14.0/config_linux/org.eclipse.osgi/51/0/.cp/gradle/init/init.gradle --init-script /home/vivan/.config/Code/User/globalStorage/redhat.java/1.14.0/config_linux/org.eclipse.osgi/51/0/.cp/gradle/protobuf/init.gradle
+auto.sync=false
+build.scans.enabled=false
+connection.gradle.distribution=GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(/opt/gradle/gradle-6.8.3))
+connection.project.dir=
+eclipse.preferences.version=1
+gradle.user.home=
+java.home=/usr/lib/jvm/java-11-openjdk-arm64
+jvm.arguments=
+offline.mode=false
+override.workspace.settings=true
+show.console.view=true
+show.executions.view=true

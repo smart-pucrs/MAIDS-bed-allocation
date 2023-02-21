@@ -1,0 +1,2 @@
+{"msgId":"mid3","isReply":"nirt","performative":"assert","sender":"ontology_specialist","receiver":"assistant","content":{"prop2":"\"Daniel Souza\"","prop1":"\"103b\"","name":"e_adequado_para","isNegated":false}}
+{"msgId":"mid4","isReply":"nirt","performative":"assert","sender":"assistant","receiver":"operator","content":{"prop2":"\"Não, esse leito não é adequado.\"","prop1":"inadequado(e_adequado_para(\"103b\",\"Daniel Souza\"))","name":"answer","isNegated":false}}

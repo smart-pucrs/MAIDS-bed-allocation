@@ -1,0 +1,36 @@
+# Eclipse files
+bin
+build
+
+# Vscode files
+/.vscode/
+
+# Gradle
+.gradle
+
+# Package Files #
+*.jar
+!libs/hsqldb.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# jacamo related
+*.log
+.stop___MAS
+*~
+
+# temp files
+*.pddl
+!src/resources/domain.pddl
+*.dom
+
+# key file
+src/resources/explainable-agent-d4391ab8fb68.json
+eexplainable-agent-firebase-adminsdk-u4w9g-4d5281c4dc.json
+
+# OS files
+*.DS_Store

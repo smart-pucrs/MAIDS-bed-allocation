@@ -1,0 +1,1334 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/vivan/ontologies/2022/10/hsl-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/vivan/ontologies/2022/10/hsl-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/vivan/ontologies/2022/10/hsl-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Acomodacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cobertura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Convenio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Especialidade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Faixa_Etaria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grau_Dependencia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infeccao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Isolamento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leito"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paciente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quarto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Status_Leito"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Status_Quarto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tipo_Especialidade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tipo_Solicitacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unidade"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#adequado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#e-da-especialidade"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#e-da-faixa-etaria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#e-de-acomodacao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#e-de-convenio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#e-de-isolamento"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#e-do-genero"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#e-do-tipo-especialidade"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#e-localizado-na-unidade"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#e-preferencialmente-isolamento"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#e-preferencialmente-sus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esta-alocado-no"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inadequado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leito-e-da-especialidade"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leito-e-da-faixa-etaria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leito-e-do-genero"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leito-e-do-tipo-especialidade"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nao-aconselhavel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possui-acomodacao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possui-cobertura"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possui-convenio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possui-infeccao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possui-pedido-ativo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possui-status"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#preferivel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#quarto-possui-status"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#se-localiza-no-quarto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Em_Limpeza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Interditado_por_Infecção"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Interdição"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manutenção"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NONE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ocup._por_paciente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ocup._por_reserva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parcialmente_Ocupado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Totalmente_Ocupado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vago"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vazio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#false"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#true"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#26"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#27"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#28"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#46"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#6"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Status_Leito"/>
+        <NamedIndividual IRI="#Em_Limpeza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status_Leito"/>
+        <NamedIndividual IRI="#Interditado_por_Infecção"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status_Leito"/>
+        <NamedIndividual IRI="#Interdição"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status_Leito"/>
+        <NamedIndividual IRI="#Manutenção"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acomodacao"/>
+        <NamedIndividual IRI="#NONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cobertura"/>
+        <NamedIndividual IRI="#NONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Convenio"/>
+        <NamedIndividual IRI="#NONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Especialidade"/>
+        <NamedIndividual IRI="#NONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Faixa_Etaria"/>
+        <NamedIndividual IRI="#NONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genero"/>
+        <NamedIndividual IRI="#NONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infeccao"/>
+        <NamedIndividual IRI="#NONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tipo_Especialidade"/>
+        <NamedIndividual IRI="#NONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status_Leito"/>
+        <NamedIndividual IRI="#Ocup._por_paciente"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status_Leito"/>
+        <NamedIndividual IRI="#Ocup._por_reserva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status_Quarto"/>
+        <NamedIndividual IRI="#Parcialmente_Ocupado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status_Quarto"/>
+        <NamedIndividual IRI="#Totalmente_Ocupado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status_Leito"/>
+        <NamedIndividual IRI="#Vago"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status_Quarto"/>
+        <NamedIndividual IRI="#Vazio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Isolamento"/>
+        <NamedIndividual IRI="#false"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Isolamento"/>
+        <NamedIndividual IRI="#true"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infeccao"/>
+        <NamedIndividual IRI="#1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infeccao"/>
+        <NamedIndividual IRI="#2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infeccao"/>
+        <NamedIndividual IRI="#26"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infeccao"/>
+        <NamedIndividual IRI="#27"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infeccao"/>
+        <NamedIndividual IRI="#28"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infeccao"/>
+        <NamedIndividual IRI="#3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infeccao"/>
+        <NamedIndividual IRI="#4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infeccao"/>
+        <NamedIndividual IRI="#46"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infeccao"/>
+        <NamedIndividual IRI="#6"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Em_Limpeza"/>
+        <NamedIndividual IRI="#Interditado_por_Infecção"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Em_Limpeza"/>
+        <NamedIndividual IRI="#Interdição"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Em_Limpeza"/>
+        <NamedIndividual IRI="#Manutenção"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Em_Limpeza"/>
+        <NamedIndividual IRI="#Ocup._por_paciente"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Em_Limpeza"/>
+        <NamedIndividual IRI="#Ocup._por_reserva"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Em_Limpeza"/>
+        <NamedIndividual IRI="#Vago"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Interditado_por_Infecção"/>
+        <NamedIndividual IRI="#Interdição"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Interditado_por_Infecção"/>
+        <NamedIndividual IRI="#Manutenção"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Interditado_por_Infecção"/>
+        <NamedIndividual IRI="#Ocup._por_paciente"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Interditado_por_Infecção"/>
+        <NamedIndividual IRI="#Ocup._por_reserva"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Interditado_por_Infecção"/>
+        <NamedIndividual IRI="#Vago"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Interdição"/>
+        <NamedIndividual IRI="#Manutenção"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Interdição"/>
+        <NamedIndividual IRI="#Ocup._por_paciente"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Interdição"/>
+        <NamedIndividual IRI="#Ocup._por_reserva"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Interdição"/>
+        <NamedIndividual IRI="#Vago"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Manutenção"/>
+        <NamedIndividual IRI="#Ocup._por_paciente"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Manutenção"/>
+        <NamedIndividual IRI="#Ocup._por_reserva"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Manutenção"/>
+        <NamedIndividual IRI="#Vago"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#NONE"/>
+        <NamedIndividual IRI="#1"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#NONE"/>
+        <NamedIndividual IRI="#2"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#NONE"/>
+        <NamedIndividual IRI="#26"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#NONE"/>
+        <NamedIndividual IRI="#27"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#NONE"/>
+        <NamedIndividual IRI="#28"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#NONE"/>
+        <NamedIndividual IRI="#3"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#NONE"/>
+        <NamedIndividual IRI="#4"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#NONE"/>
+        <NamedIndividual IRI="#46"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#NONE"/>
+        <NamedIndividual IRI="#6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ocup._por_paciente"/>
+        <NamedIndividual IRI="#Ocup._por_reserva"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ocup._por_paciente"/>
+        <NamedIndividual IRI="#Vago"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ocup._por_reserva"/>
+        <NamedIndividual IRI="#Vago"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Parcialmente_Ocupado"/>
+        <NamedIndividual IRI="#Totalmente_Ocupado"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Parcialmente_Ocupado"/>
+        <NamedIndividual IRI="#Vazio"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Totalmente_Ocupado"/>
+        <NamedIndividual IRI="#Vazio"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#false"/>
+        <NamedIndividual IRI="#true"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#1"/>
+        <NamedIndividual IRI="#2"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#1"/>
+        <NamedIndividual IRI="#26"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#1"/>
+        <NamedIndividual IRI="#27"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#1"/>
+        <NamedIndividual IRI="#28"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#1"/>
+        <NamedIndividual IRI="#3"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#1"/>
+        <NamedIndividual IRI="#4"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#1"/>
+        <NamedIndividual IRI="#46"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#1"/>
+        <NamedIndividual IRI="#6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#2"/>
+        <NamedIndividual IRI="#26"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#2"/>
+        <NamedIndividual IRI="#27"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#2"/>
+        <NamedIndividual IRI="#28"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#2"/>
+        <NamedIndividual IRI="#3"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#2"/>
+        <NamedIndividual IRI="#4"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#2"/>
+        <NamedIndividual IRI="#46"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#2"/>
+        <NamedIndividual IRI="#6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#26"/>
+        <NamedIndividual IRI="#27"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#26"/>
+        <NamedIndividual IRI="#28"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#26"/>
+        <NamedIndividual IRI="#3"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#26"/>
+        <NamedIndividual IRI="#4"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#26"/>
+        <NamedIndividual IRI="#46"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#26"/>
+        <NamedIndividual IRI="#6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#27"/>
+        <NamedIndividual IRI="#28"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#27"/>
+        <NamedIndividual IRI="#3"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#27"/>
+        <NamedIndividual IRI="#4"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#27"/>
+        <NamedIndividual IRI="#46"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#27"/>
+        <NamedIndividual IRI="#6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#28"/>
+        <NamedIndividual IRI="#3"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#28"/>
+        <NamedIndividual IRI="#4"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#28"/>
+        <NamedIndividual IRI="#46"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#28"/>
+        <NamedIndividual IRI="#6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#3"/>
+        <NamedIndividual IRI="#4"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#3"/>
+        <NamedIndividual IRI="#46"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#3"/>
+        <NamedIndividual IRI="#6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#4"/>
+        <NamedIndividual IRI="#46"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#4"/>
+        <NamedIndividual IRI="#6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#46"/>
+        <NamedIndividual IRI="#6"/>
+    </DifferentIndividuals>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#adequado"/>
+        <ObjectProperty IRI="#inadequado"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#inadequado"/>
+        <ObjectProperty IRI="#preferivel"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#nao-aconselhavel"/>
+        <ObjectProperty IRI="#preferivel"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#adequado"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#e-da-especialidade"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#e-da-faixa-etaria"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#e-de-acomodacao"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#e-de-convenio"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#e-de-isolamento"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#e-do-genero"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#e-do-tipo-especialidade"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#e-localizado-na-unidade"/>
+        <Class IRI="#Quarto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#e-preferencialmente-isolamento"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#e-preferencialmente-sus"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esta-alocado-no"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inadequado"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#leito-e-da-especialidade"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#leito-e-da-faixa-etaria"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#leito-e-do-genero"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#leito-e-do-tipo-especialidade"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nao-aconselhavel"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possui-acomodacao"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possui-cobertura"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possui-convenio"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possui-infeccao"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possui-pedido-ativo"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possui-status"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#preferivel"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#quarto-possui-status"/>
+        <Class IRI="#Quarto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#se-localiza-no-quarto"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#adequado"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#e-da-especialidade"/>
+        <Class IRI="#Especialidade"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#e-da-faixa-etaria"/>
+        <Class IRI="#Faixa_Etaria"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#e-de-acomodacao"/>
+        <Class IRI="#Acomodacao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#e-de-convenio"/>
+        <Class IRI="#Convenio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#e-de-isolamento"/>
+        <Class IRI="#Infeccao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#e-do-genero"/>
+        <Class IRI="#Genero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#e-do-tipo-especialidade"/>
+        <Class IRI="#Tipo_Especialidade"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#e-localizado-na-unidade"/>
+        <Class IRI="#Unidade"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#e-preferencialmente-isolamento"/>
+        <Class IRI="#Isolamento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#e-preferencialmente-sus"/>
+        <Class IRI="#Sus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esta-alocado-no"/>
+        <Class IRI="#Leito"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inadequado"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#leito-e-da-especialidade"/>
+        <Class IRI="#Especialidade"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#leito-e-da-faixa-etaria"/>
+        <Class IRI="#Faixa_Etaria"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#leito-e-do-genero"/>
+        <Class IRI="#Genero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#leito-e-do-tipo-especialidade"/>
+        <Class IRI="#Tipo_Especialidade"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nao-aconselhavel"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possui-acomodacao"/>
+        <Class IRI="#Acomodacao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possui-cobertura"/>
+        <Class IRI="#Cobertura"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possui-convenio"/>
+        <Class IRI="#Convenio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possui-infeccao"/>
+        <Class IRI="#Infeccao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possui-pedido-ativo"/>
+        <Class IRI="#Tipo_Solicitacao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possui-status"/>
+        <Class IRI="#Status_Leito"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#preferivel"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#quarto-possui-status"/>
+        <Class IRI="#Status_Quarto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#se-localiza-no-quarto"/>
+        <Class IRI="#Quarto"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-da-especialidade"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <Variable IRI="urn:swrl:var#Ep"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#leito-e-da-especialidade"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#El"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Ep"/>
+                <Variable IRI="urn:swrl:var#El"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#El"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Ep"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#nao-aconselhavel"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-da-faixa-etaria"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <Variable IRI="urn:swrl:var#Idp"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#leito-e-da-faixa-etaria"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#Idl"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Idp"/>
+                <Variable IRI="urn:swrl:var#Idl"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Idl"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Idp"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#nao-aconselhavel"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#possui-cobertura"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <Variable IRI="urn:swrl:var#Cp"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-de-acomodacao"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#Cl"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Cp"/>
+                <Variable IRI="urn:swrl:var#Cl"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Cl"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Cp"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#inadequado"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#possui-convenio"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <Variable IRI="urn:swrl:var#Cnp"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-de-convenio"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#Cnl"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Cnp"/>
+                <Variable IRI="urn:swrl:var#Cnl"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Cnl"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Cnp"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#inadequado"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#possui-status"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <NamedIndividual IRI="#Vago"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#possui-infeccao"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <Variable IRI="urn:swrl:var#In"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-de-isolamento"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#In"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#preferivel"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#possui-infeccao"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <Variable IRI="urn:swrl:var#In"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#In"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-de-isolamento"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#Is"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#In"/>
+                <Variable IRI="urn:swrl:var#Is"/>
+            </DifferentIndividualsAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#se-localiza-no-quarto"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#Q"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#quarto-possui-status"/>
+                <Variable IRI="urn:swrl:var#Q"/>
+                <Variable IRI="urn:swrl:var#Qs"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Qs"/>
+                <NamedIndividual IRI="#Vazio"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#inadequado"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-do-genero"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <Variable IRI="urn:swrl:var#Gp"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#leito-e-do-genero"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#Gl"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Gp"/>
+                <Variable IRI="urn:swrl:var#Gl"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Gl"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Gp"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#inadequado"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-do-tipo-especialidade"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <Variable IRI="urn:swrl:var#Tep"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#leito-e-do-tipo-especialidade"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#Tel"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Tep"/>
+                <Variable IRI="urn:swrl:var#Tel"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Tel"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#Tep"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#nao-aconselhavel"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#possui-infeccao"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <Variable IRI="urn:swrl:var#In"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#In"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-preferencialmente-isolamento"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <NamedIndividual IRI="#false"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#se-localiza-no-quarto"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#Q"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#quarto-possui-status"/>
+                <Variable IRI="urn:swrl:var#Q"/>
+                <NamedIndividual IRI="#Vazio"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#nao-aconselhavel"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#possui-status"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <NamedIndividual IRI="#Vago"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#possui-infeccao"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <Variable IRI="urn:swrl:var#In"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#In"/>
+                <NamedIndividual IRI="#NONE"/>
+            </DifferentIndividualsAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-preferencialmente-isolamento"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <NamedIndividual IRI="#true"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#se-localiza-no-quarto"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#Q"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#quarto-possui-status"/>
+                <Variable IRI="urn:swrl:var#Q"/>
+                <NamedIndividual IRI="#Vazio"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#preferivel"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#possui-infeccao"/>
+                <Variable IRI="urn:swrl:var#P"/>
+                <NamedIndividual IRI="#NONE"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#e-preferencialmente-isolamento"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <NamedIndividual IRI="#true"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#se-localiza-no-quarto"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#Q"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#quarto-possui-status"/>
+                <Variable IRI="urn:swrl:var#Q"/>
+                <NamedIndividual IRI="#Vazio"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#nao-aconselhavel"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Paciente"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Leito"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#possui-status"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#S"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl:var#S"/>
+                <NamedIndividual IRI="#Vago"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#inadequado"/>
+                <Variable IRI="urn:swrl:var#Le"/>
+                <Variable IRI="urn:swrl:var#P"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

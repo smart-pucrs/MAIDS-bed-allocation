@@ -1,0 +1,46 @@
+version: "3.7"
+
+services:
+  postgres:
+    container_name: "hsl-postgres"
+    image: deboraengelmann/explainable-agent-database
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=hslsecret
+      - POSTGRES_DB=hsl-postgres
+      - TZ=America/Sao_Paulo
+    networks:
+      - default
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: "pgadmin"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=debo.c.e.3@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=hslsecret
+      - TZ=America/Sao_Paulo
+    ports:
+      - "5050:80"
+      - "5051:443"
+    # volumes:
+    #   - pg-admin-data:/srv/PGAdmin4
+    #   - pga4volume:/var/lib/pgadmin
+
+    networks:
+      - default  
+
+volumes:
+  pg-admin-data:
+  pga4volume:
+  postgres-data:
+
+
+networks:
+  default:
+    driver: bridge

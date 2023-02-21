@@ -1,0 +1,3 @@
+{"msgId":"mid2","isReply":"nirt","performative":"question","sender":"assistant","receiver":"ontology_specialist","content":{"prop2":"\"Daniel Souza\"","prop1":"\"103b\"","name":"e_adequado_para","isNegated":false}}
+{"msgId":"mid1","isReply":"nirt","performative":"question","sender":"operator","receiver":"assistant","content":{"prop2":"\"Daniel Souza\"","prop1":"\"103b\"","name":"e_adequado_para","isNegated":false}}
+{"msgId":"mid3","isReply":"nirt","performative":"assert","sender":"ontology_specialist","receiver":"assistant","content":{"prop2":"\"Daniel Souza\"","prop1":"\"103b\"","name":"e_adequado_para","isNegated":false}}
